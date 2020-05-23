@@ -2527,8 +2527,8 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image:  url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/wed.jpg");
-		/* background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg"); */
+		/*background-image:  url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/wed.jpg");*/
+		background: url("images/light-bl.svg"), url("images/light-br.svg"), linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/wed.jpg');
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2536,7 +2536,6 @@ input, select, textarea {
 		cursor: default;
 		padding: 8em 0;
 		text-align: center;
-		opacity: 80%;
 	}
 
 		#banner .inner {
@@ -3343,15 +3342,24 @@ input, select, textarea {
 		width: 40px;
 		filter: invert();
 	}
-
-	div.background-darken {
-		position: relative;
-		background-color: black;
+	#header.alt.reveal .logo {
+		margin: -10px 0;
+	}
+	#header.reveal .logo {
+		filter: none;
+		margin: -7px 0 -10px 0;
+	}
+	#header nav ul {
+		padding: 4px 0;
+		margin: 0;
 	}
 
 	section#banner {
 		height: 100vh;
-
+	}
+	
+	section#banner .inner {
+		border-radius: 1em;
 	}
 
 	section.wrapper.style3.container.special {
