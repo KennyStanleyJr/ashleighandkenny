@@ -3343,6 +3343,7 @@ input, select, textarea {
 		filter: invert();
 	}
 	#header.alt.reveal .logo {
+		filter: invert();
 		margin: -10px 0;
 	}
 	#header.reveal .logo {
