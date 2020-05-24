@@ -2311,6 +2311,7 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 		width: 100%;
+		height: 60px;
 		z-index: 10000;
 	}
 
@@ -2621,7 +2622,7 @@ input, select, textarea {
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		padding-top: 3em;
 	}
 
 /* CTA */
@@ -2931,9 +2932,9 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				/* display: none; */
-			}
+			/* #header {
+				display: none;
+			} */
 
 		/* Banner */
 
@@ -3169,7 +3170,7 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				min-width: 320px;
+				min-width: 330px;
 			}
 
 			h2 {
@@ -3182,9 +3183,9 @@ input, select, textarea {
 				letter-spacing: 0.025em;
 			}
 
-			p {
+			/* p {
 				text-align: justify;
-			}
+			} */
 
 		/* Section/Article */
 
@@ -3396,11 +3397,50 @@ input, select, textarea {
 		background-color: white;
 	}
 
+	#detail-section {
+		background-color: rgba(0, 0, 0, 0.75);
+		border-radius: 50px;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 800px;
+		padding: 3em;
+	}
+
 	.details-container {
 		text-align: center;
+		width: fit-content;
+		margin: 0 auto;
 	}
 
 	#save-the-date {
+		margin-top: 4em;
 		width: 60%;
-		z-index: -1;
+	}
+
+	.details {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		justify-content: space-evenly;
+		margin-top: 2em;
+		align-items: center;
+	}
+
+	.animation {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 50%;
+		height: 300px;
+	}
+	#first-animation {
+		background-image: url("../../images/smiles.gif");
+	}
+	#second-animation {
+		background-image: url("../../images/brick-walkway.gif");
+	}
+
+	.info {
+		color: white;
+		text-align: center;
+		margin-top: 2em;
 	}
