@@ -3363,11 +3363,19 @@ input, select, textarea {
 		border-radius: 1em;
 	}
 
-	section.wrapper.style3.container.special {
+	header.special.container, section.special.container, section.special-alt.container {
 		display: none;
 	}
 
-	section.wrapper.style2.container.special-alt {
-		display: none;
+	article#main {
+		background-color: white;
 	}
 
+	.details-container {
+		text-align: center;
+	}
+
+	#save-the-date {
+		width: 60%;
+		z-index: -1;
+	}
