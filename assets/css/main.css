@@ -2536,6 +2536,9 @@ input, select, textarea {
 		cursor: default;
 		padding: 8em 0;
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 		#banner .inner {
@@ -2757,6 +2760,27 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
+		/* CUSTOM */
+		header .logo {
+			display: none;
+			
+		}
+		
+		header.alt {
+			box-sizing: unset;
+		}
+
+		header.reveal {
+			height: 60px;
+		}
+
+		header #nav {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2908,7 +2932,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				display: none;
+				/* display: none; */
 			}
 
 		/* Banner */
@@ -2961,6 +2985,7 @@ input, select, textarea {
 
 		/* Nav */
 
+			/*
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -3133,7 +3158,7 @@ input, select, textarea {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
-			}
+			}*/
 
 	}
 
