@@ -3398,7 +3398,7 @@ input, select, textarea {
 	}
 
 	#detail-section {
-		background-color: rgba(0, 0, 0, 0.75);
+		/* background-color: rgba(0, 0, 0, 0.75); */
 		border-radius: 50px;
 		text-align: center;
 		margin: 0 auto;
@@ -3414,12 +3414,12 @@ input, select, textarea {
 
 	#save-the-date {
 		margin-top: 4em;
-		width: 60%;
+		width: 45%;
 	}
 
 	.details {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		justify-content: space-evenly;
 		margin-top: 2em;
 		align-items: center;
@@ -3430,7 +3430,9 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 50%;
+		justify-self: center;
 		height: 300px;
+		width: 300px;
 	}
 	#first-animation {
 		background-image: url("../../images/smiles.gif");
@@ -3440,7 +3442,44 @@ input, select, textarea {
 	}
 
 	.info {
-		color: white;
+		/* color: white; */
 		text-align: center;
-		margin-top: 2em;
+		margin: 2em 2em 0 2em;
 	}
+	.info h2 {
+		font-size: 40px;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+	.info h3 {
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: none;
+	}
+	.info p {
+		font-size: 25px;
+	}
+
+
+	@media only screen and (max-width: 736px) {
+		div#details-first {
+			margin-top: 0;
+		}
+		
+		#save-the-date {
+			width: 80%;
+			margin-bottom: 2em;
+		}
+
+		.info h2 {
+			font-size: 30px;
+		}
+		.info h3 {
+			font-size: 25px;
+		}
+		.info p {
+			font-size: 20px;
+		}
+
+
+	  }
