@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-/*
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -79,6 +74,8 @@ input, select, textarea {
 		overflow-x: hidden;
 		width: 100%;
 		height: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	*, *:before, *:after {
@@ -87,6 +84,11 @@ input, select, textarea {
 
 	body {
 		background: #f3f6fa;
+		overflow-x: hidden;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2304,9 +2306,9 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: rgba(0, 0, 0, 0.5);
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		color: inherit;
+		color: white;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
@@ -2330,7 +2332,7 @@ input, select, textarea {
 		#header nav {
 			letter-spacing: 0.075em;
 			position: absolute;
-			right: 1.5em;
+			/* right: 1.5em; */
 			text-transform: uppercase;
 			top: 0.75em;
 		}
@@ -2531,7 +2533,6 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		/*background-image:  url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/wed.jpg");*/
 		background: url("images/light-bl.svg"), url("images/light-br.svg"), linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/wed.jpg');
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -2765,6 +2766,10 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		/* CUSTOM */
+		#header {
+			padding: 1em 0;
+		}
+
 		header .logo {
 			display: none;
 			
@@ -2933,11 +2938,6 @@ input, select, textarea {
 				padding: 1em 0 0 0;
 			}
 
-		/* Header */
-
-			/* #header {
-				display: none;
-			} */
 
 		/* Banner */
 
@@ -2986,184 +2986,6 @@ input, select, textarea {
 			#footer {
 				padding: 4em 1.5em;
 			}
-
-		/* Nav */
-
-			/*
-			#page-wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding-bottom: 1px;
-			}
-
-			#navButton {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 60px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10001;
-			}
-
-				#navButton .toggle {
-					text-decoration: none;
-					height: 60px;
-					left: 0;
-					position: absolute;
-					text-align: center;
-					top: 0;
-					width: 100%;
-					border: 0;
-					outline: 0;
-				}
-
-					#navButton .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						display: inline-block;
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
-						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
-					}
-
-					#navButton .toggle:before {
-						color: #fff;
-						content: '\f0c9';
-						font-size: 1em;
-						height: 40px;
-						left: 10px;
-						line-height: 40px;
-						opacity: 0.5;
-						position: absolute;
-						top: 11px;
-						width: 60px;
-						z-index: 1;
-					}
-
-					#navButton .toggle:after {
-						background: rgba(163, 169, 170, 0.75);
-						border-radius: 2px;
-						content: '';
-						height: 40px;
-						left: 10px;
-						position: absolute;
-						top: 10px;
-						width: 60px;
-					}
-
-			#navPanel {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 100%;
-				left: 0;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: 275px;
-				z-index: 10002;
-				background: #1c2021;
-				color: #fff;
-				font-size: 0.8em;
-				letter-spacing: 0.075em;
-				text-transform: uppercase;
-				padding: 0.25em 0.75em 1em 0.75em;
-			}
-
-				#navPanel .link {
-					border: 0;
-					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					color: inherit;
-					display: block;
-					height: 3em;
-					line-height: 3em;
-					opacity: 0.75;
-					text-decoration: none;
-				}
-
-					#navPanel .link.depth-0 {
-						font-weight: 900;
-					}
-
-					#navPanel .link:first-child {
-						border-top: 0;
-					}
-
-				#navPanel .indent-1 {
-					display: inline-block;
-					width: 1em;
-				}
-
-				#navPanel .indent-2 {
-					display: inline-block;
-					width: 2em;
-				}
-
-				#navPanel .indent-3 {
-					display: inline-block;
-					width: 3em;
-				}
-
-				#navPanel .indent-4 {
-					display: inline-block;
-					width: 4em;
-				}
-
-				#navPanel .indent-5 {
-					display: inline-block;
-					width: 5em;
-				}
-
-			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
-			}
-
-			body.navPanel-visible #navButton {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
-			}
-
-			body.navPanel-visible #navPanel {
-				-moz-transform: translateX(0);
-				-webkit-transform: translateX(0);
-				-ms-transform: translateX(0);
-				transform: translateX(0);
-			}*/
-
 	}
 
 /* Mobile */
@@ -3186,9 +3008,6 @@ input, select, textarea {
 				letter-spacing: 0.025em;
 			}
 
-			/* p {
-				text-align: justify;
-			} */
 
 		/* Section/Article */
 
@@ -3368,20 +3187,14 @@ input, select, textarea {
 /* Custom CSS */
 
 	.logo {
+		position: absolute;
+		top: 10px;
 		width: 40px;
 		filter: invert();
 	}
-	#header.alt.reveal .logo {
-		filter: invert();
-		margin: -10px 0;
-	}
-	#header.reveal .logo {
-		filter: none;
-		margin: -7px 0 -10px 0;
-	}
+	
 	#header nav ul {
 		padding: 4px 0;
-		margin: 0;
 	}
 
 	section#banner {
@@ -3401,12 +3214,10 @@ input, select, textarea {
 	}
 
 	#detail-section {
-		/* background-color: rgba(0, 0, 0, 0.75); */
 		border-radius: 50px;
 		text-align: center;
 		margin: 0 auto;
 		max-width: 700px;
-		/* padding: 3em; */
 	}
 
 	.details-container {
@@ -3447,7 +3258,6 @@ input, select, textarea {
 	}
 
 	.info {
-		/* color: white; */
 		text-align: center;
 		margin: 2em 2em 0 2em;
 	}
@@ -3530,6 +3340,9 @@ input, select, textarea {
 			margin-top: 0;
 		}
 		
+		#header {
+			padding: 1em;
+		}
 
 		.registries li {
 			width: 200px;
@@ -3545,6 +3358,21 @@ input, select, textarea {
 		.info p {
 			font-size: 20px;
 		}
+	  }
 
+	  @media only screen and (max-width: 331px) {
+		#header {
+			height: 90px;
+		}
+	  }
+	  @media only screen and (max-width: 213px) {
+		#header {
+			height: 120px;
+		}
+	  }
 
+	  @media only screen and (min-width: 980px) {
+		  #header nav {
+			  right: 1.5em;
+		  }
 	  }
