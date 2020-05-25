@@ -113,7 +113,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		color: #3fb1a3;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 	}
 
 		a:hover {
@@ -3402,8 +3402,8 @@ input, select, textarea {
 		border-radius: 50px;
 		text-align: center;
 		margin: 0 auto;
-		max-width: 800px;
-		padding: 3em;
+		max-width: 700px;
+		/* padding: 3em; */
 	}
 
 	.details-container {
@@ -3414,7 +3414,7 @@ input, select, textarea {
 
 	#save-the-date {
 		margin-top: 4em;
-		width: 45%;
+		width: 80vh;
 	}
 
 	.details {
@@ -3426,9 +3426,7 @@ input, select, textarea {
 	}
 
 	.animation {
-		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: center;
 		border-radius: 50%;
 		justify-self: center;
 		height: 300px;
@@ -3436,9 +3434,13 @@ input, select, textarea {
 	}
 	#first-animation {
 		background-image: url("../../images/smiles.gif");
+		background-size: cover;
+		background-position: center;
 	}
 	#second-animation {
 		background-image: url("../../images/brick-walkway.gif");
+		background-size: 250%;
+		background-position: 54% 30%;
 	}
 
 	.info {
@@ -3461,14 +3463,74 @@ input, select, textarea {
 	}
 
 
-	@media only screen and (max-width: 736px) {
-		div#details-first {
-			margin-top: 0;
-		}
+	.reg-container h1 {
+		font-size: 30px;
+		margin-bottom: 2em;
+	}
+	.registries {
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.registries li {
+		background-color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+		padding: 1em;
+		margin: 1em;
+		width: 30vmin;
+		height: 30vmin;
+		transition: 250ms ease-in-out;
+		transition-property: transform;
+	}
+	.registries #reg-1 {
+		background-image: url("../../images/registry-pictures/williams-sonoma.png");
+		background-size: 110%;
+	}
+	.registries #reg-2 {
+		background-image: url("../../images/registry-pictures/bed-bath-and-beyond.png");
+		background-size: 130%;
+	}
+	.registries #reg-3 {
+		background-image: url("../../images/registry-pictures/anthropology-logo.png");
+		background-size: 140%;
+	}
+	.registries li:hover {
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+
+
+	ul.icons {
+		display: none;
+	}
+	footer#footer {
+		margin: 0;
+		padding: 2em;
+	}
+
+	@media only screen and (max-width: 1000px) {
 		
 		#save-the-date {
 			width: 80%;
-			margin-bottom: 2em;
+			margin-bottom: 1em;
+		}
+	}
+
+	@media only screen and (max-width: 736px) {
+		.details {
+			margin-top: 0;
+		}
+		
+
+		.registries li {
+			width: 200px;
+			height: 200px;
 		}
 
 		.info h2 {
