@@ -3341,7 +3341,7 @@ input, select, textarea {
 		}
 		
 		#header {
-			padding: 1em;
+			padding: 1em 0;
 		}
 
 		.registries li {
