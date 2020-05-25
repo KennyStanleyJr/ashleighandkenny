@@ -3398,7 +3398,7 @@ input, select, textarea {
 	}
 
 	#detail-section {
-		background-color: rgba(0, 0, 0, 0.75);
+		/* background-color: rgba(0, 0, 0, 0.75); */
 		border-radius: 50px;
 		text-align: center;
 		margin: 0 auto;
