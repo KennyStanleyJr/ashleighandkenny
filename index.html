@@ -1,120 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ashleigh and Kenny</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="index is-preload">
-		<div id="page-wrapper">
-			<div id="welcome"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashleigh and Kenny Wedding Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page-wrapper">
 
-			<!-- Header -->
-				<header id="header" class="">
-					<img class="logo" id="logo" src="./images/wedding-couple.svg" alt="wedding couple icon">
-					<nav id="nav">
-						<ul>
-							<li class="current"><a class="scrolly" href="#welcome">Welcome</a></li>
-							<li class="current"><a class="scrolly" href="#details">Details</a></li>
-							<li class="current"><a class="scrolly" href="#registry">Registry</a></li>
-						</ul>
-					</nav>
-				</header>
+        <header>
+            <a href="./index.html"><img id="logo" src="./images/wedding-couple.svg" alt="Wedding Couple Icon"></a>
+            <nav>
+                <ul class="menu">
+                    <a href="index.html"><li class="menu-item">Welcome</li></a>
+                    <a href="#details"><li class="menu-item">Details</li></a>
+                    <a href="#registry"><li class="menu-item">Registry</li></a>
+                </ul>
+            </nav>
+        </header>
 
-			<!-- Banner -->
-				
-				<section id="banner">
+        <div class="hero-wrapper">
+            <div class="title-wrapper">
+                <h1 class="title">Ashleigh and Kenny</h1>
+                <h3 class="subtitle">We're getting married!</h3>
+                <button id="details-button">Details</button>
+            </div>
+        </div>
 
-					<div class="inner">
+        <section id="details-wrapper">
+            <div id="details">
+                <article id="first">
+                    <img class="animation" id="first-animation" src="./images/smiles.gif" alt="Ashleigh and Kenny Smiling.">
+                    <div id="first-info">
+                        <h2>When</h2>
+                        <p>October 3rd, 2020</p>
+                    </div>
+                </article>
+                <article id="second">
+                    <div id="second-info">
+                        <h2>Where</h2>
+                        <h4>Cainland Farm</h4>
+                        <p>3930 Jimmy Gray Robinson Rd.<br>
+                            Williamsport, TN 38487</p>
+                    </div>
+                    <img class="animation" id="second-animation" src="./images/brick-walkway.gif" alt="Ashleigh and Kenny holding hands.">
+                </article>
+                <img src="./images/save-the-date.jpg" alt="Save the Date Letter">
+            </div>
+        </section>
 
-						<header>
-							<h2 style="text-transform: none; font-weight: 400;">Ashleigh and Kenny</h2>
-						</header>
-						<p>We're getting <strong>married!</strong></p>
-						<footer>
-							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">Details</a></li>
-							</ul>
-						</footer>
+        <section id="registry-wrapper">
+            <div id="registry">
+                <h2>We have <strong>Registries</strong> in the following places...</h2>
+                <ul id="registry-list">
+                    <li class="registry-list-item" id="first-registry"><a href="#">Williams Sonoma</a></li>
+                    <li class="registry-list-item" id="second-registry"><a href="#">Bed Bath and Beyond</a></li>
+                    <li class="registry-list-item" id="third-registry"><a href="#">Anthropology</a></li>
+                </ul>
+            </div>
+        </section>
 
-					</div>
+        <footer></footer>
 
-				</section>
-
-			<!-- Main -->
-			<div id="details"></div>
-				<article id="main">
-					
-					<section class="details-container">
-						
-						<section id="detail-section">
-							<div class="details" id="details-first">
-								<div class="animation" id="first-animation"></div>
-								<div class="info">
-									<h2>When</h2>
-									<p>October 3rd, 2020</p>
-								</div>
-							</div>
-							<hr>
-							<div class="details" id="details-second">
-								<div class="info">
-									<h2>Where</h2>
-									<h3>Cainland Farm</h3>
-									<p>3930 Jimmy Gray Robinson Rd ,<br>
-										Williamsport, TN 38487</p>
-								</div>
-								<div class="animation" id="second-animation"></div>
-							</div>
-						</section>
-					
-						<img id="save-the-date" src="./images/ashken.jpg" alt="Wedding save the date.">
-
-					</section>
-
-
-				</article>
-
-			<!-- CTA -->
-				<section id="cta">
-					<div id="registry"></div>
-
-					<article class="reg-container">
-						<h1>We have <strong>Registries</strong> at the following places...</h1>
-						<ul class="registries">
-							<a href="https://www.williams-sonoma.com/registry/bxzj5nxw2r/registry-list.html" target="_blank"><li id="reg-1"></li></a>
-							<a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/548255256" target="_blank"><li id="reg-2"></li></a>
-							<a href="https://www.anthropologie.com/registry/listing?registryId=ZDDLNJHIM2Y3" target="_blank"><li id="reg-3"></li></a>
-						</ul>
-					</article>
-
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </div>
+</body>
 </html>
