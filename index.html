@@ -9,25 +9,30 @@
 <body>
     <div class="page-wrapper">
 
+        <!-- HEADER -->
         <header>
             <a href="./index.html"><img id="logo" src="./images/wedding-couple.svg" alt="Wedding Couple Icon"></a>
             <nav>
                 <ul class="menu">
-                    <a href="index.html"><li class="menu-item">Welcome</li></a>
-                    <a href="#details"><li class="menu-item">Details</li></a>
-                    <a href="#registry"><li class="menu-item">Registry</li></a>
+                    <a href="#welcome"><li class="menu-item button">Welcome</li></a>
+                    <a href="#details"><li class="menu-item button">Details</li></a>
+                    <a href="#registry"><li class="menu-item button">Registry</li></a>
                 </ul>
             </nav>
         </header>
 
-        <div class="hero-wrapper">
+        <!-- BANNER -->
+        <div class="banner" id="welcome">
             <div class="title-wrapper">
-                <h1 class="title">Ashleigh and Kenny</h1>
-                <h3 class="subtitle">We're getting married!</h3>
-                <button id="details-button">Details</button>
+                <div>
+                    <h1 class="title">Ashleigh and Kenny</h1>
+                    <h3 class="subtitle">We're getting<br><strong>married!</strong></h3>
+                    <a href="#details" class="button" id="details-button">Details</a>
+                </div>
             </div>
         </div>
 
+        <!-- DETAILS -->
         <section id="details-wrapper">
             <div id="details">
                 <article id="first">
@@ -46,10 +51,11 @@
                     </div>
                     <img class="animation" id="second-animation" src="./images/brick-walkway.gif" alt="Ashleigh and Kenny holding hands.">
                 </article>
-                <img src="./images/save-the-date.jpg" alt="Save the Date Letter">
+                <img id="save-the-date" src="./images/save-the-date.jpg" alt="Save the Date Letter">
             </div>
         </section>
 
+        <!-- REGISTRY -->
         <section id="registry-wrapper">
             <div id="registry">
                 <h2>We have <strong>Registries</strong> in the following places...</h2>
@@ -61,6 +67,7 @@
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer></footer>
 
     </div>
