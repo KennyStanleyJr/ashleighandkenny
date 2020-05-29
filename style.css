@@ -64,10 +64,6 @@ nav, .menu {
     color: black;
 }
 
-.banner {
-    width: 100vw;
-    padding: 5vh;
-}
 
 #welcome {
     background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/wed.jpg");
@@ -76,8 +72,9 @@ nav, .menu {
     background-position: center top;
     padding: 25vh 5vh;
     height: 100vh;
+    width: 100vw;
 }
-.title-wrapper, #details-wrapper {
+.title-wrapper{
     display: table;
     background-color: rgba(0, 0, 0, 0.5);
     border: .5rem solid white;
@@ -88,6 +85,10 @@ nav, .menu {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+}
+.cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 .title-wrapper * {
     padding: 1rem;
@@ -101,7 +102,7 @@ nav, .menu {
     font-size: 4rem;
     font-weight: 300;
 }
-.banner strong {
+#welcome strong {
     text-transform: uppercase;
 }
 #banner-button {
@@ -110,25 +111,52 @@ nav, .menu {
     margin-top: 3rem;
 }
 
-#details article, #details img {
-    display: table-row;
+#details {
+    padding: 10rem 0;
+    /* margin-top: 15rem; */
     width: 100%;
 }
-.cell {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 3rem;
+#details-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.details-cell {
+    font-size: 3rem;
+    margin: 0 auto;
+    height: 50vmin;
+    width: 50vmin;
+    justify-content: center;
+}
+.details-cell h2 {
+    margin-bottom: 1rem;
+    font-family: 'Alex Brush', cursive;
+    font-size: 8rem;
+}
+.details-cell h4 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+#first-info {
+    padding: 10rem 0;
+}
+#second-info {
+    padding: 10vmin 0;
+}
 .animation {
-    width: 25vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    height: 40vmin;
-    width: 40vmin;
-    margin: 0 auto;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5); */
 }
 #first-animation {
     background-image: url("./images/smiles.gif");
