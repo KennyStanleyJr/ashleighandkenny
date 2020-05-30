@@ -66,10 +66,10 @@ nav, .menu {
 
 
 #welcome {
-    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/wed.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+    background: url("./images/lines/light-bl.svg"), url("./images/lines/light-br.svg"), linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/wed.jpg");
+    background-position: bottom left, bottom right, top left, top center;
+    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+    background-size: 45em, 45em, auto, cover;
     padding: 25vh 5vh;
     height: 100vh;
     width: 100vw;
@@ -112,16 +112,24 @@ nav, .menu {
 }
 
 #details {
-    padding: 10rem 0;
-    /* margin-top: 15rem; */
-    width: 100%;
+    width: 100vw;
+    background-image: url("./images/lines/dark-tl.svg"), url("./images/lines/dark-tr.svg"), url("./images/lines/dark-bl.svg"), url("./images/lines/dark-br.svg");
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 45em;
+    padding-bottom: 10rem;
 }
 #details-wrapper {
     text-align: center;
     margin: 0 auto;
-    width: 80%;
 }
 
+#info {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 8rem 0 1rem 0;
+}
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -129,16 +137,15 @@ nav, .menu {
     align-items: center;
 }
 .details-cell {
-    font-size: 3rem;
+    font-size: 2.83vh;
     margin: 0 auto;
-    height: 50vmin;
-    width: 50vmin;
-    justify-content: center;
+    height: calc(50vh - 9rem);
+    width: calc(50vh - 9rem);
 }
 .details-cell h2 {
     margin-bottom: 1rem;
     font-family: 'Alex Brush', serif;
-    font-size: 8rem;
+    font-size: 8vh;
 }
 .details-cell h4 {
     margin-bottom: 2rem;
@@ -151,46 +158,172 @@ nav, .menu {
     padding: 10vmin 0;
 }
 .flex-container#second {
-    margin: 5rem 0 15rem 0;
+    margin: 0 0 10rem 0;
 }
 
 .animation {
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 50%;
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
     /* box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5); */
 }
 #first-animation {
     background-image: url("./images/smiles.gif");
+    background-position: center;
+    background-size: cover;
 }
 #second-animation {
     background-image: url("./images/brick-walkway.gif");
+    background-position: 56% 20%;
+    background-size: 150%;
 }
 #save-the-date {
-    background-image: url("./images/save-the-date.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: calc(80vh / 1.3);
+    max-width: 800px;
+    width: 80%;
     margin: 3rem;
 }
 
 
-.registry-wrapper {
+#registry-wrapper {
     background: gray;
+    background-image: url("./images/lines/light-tl.svg"), url("./images/lines/light-tr.svg"), linear-gradient(45deg, rgb(75,37,80), transparent);;
+    background-position: top left, top right, bottom center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 45em, 45em, cover;
+    width: 100vw;
+}
+#registry {
+    padding-bottom: 8rem;
+}
+#registry h2 {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 5rem 5rem 0 5rem;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+#registry-list {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#registry-list li {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin: 1em;
+    width: 30vmin;
+    height: 30vmin;
+    transition: 250ms ease-in-out;
+    transition-property: transform;
+}
+#registry-list a {
+    font-size: 0;
+    height: 100%;
+}
+#first-registry {
+    background-image: url("./images/registry-pictures/williams-sonoma.png");
+    background-size: 120%;
+    background-position: center;
+}
+#second-registry {
+    background-image: url("./images/registry-pictures/bed-bath-and-beyond.png");
+    background-size: 150%;
+    background-position: center;
+}
+#third-registry {
+    background-image: url("./images/registry-pictures/anthropology-logo.png");
+    background-size: 90%;
+    background-position: 50% 100%;
+}
+#registry-list li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #welcome {
+        background-size: 30em, 30em, auto, cover;
+    }
+    #details {
+        background-size: 30em;
+    }
+    #registry-wrapper {
+        background-size: 30em, 30em, cover;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #welcome {
+        background-size: 23em, 23em, auto, cover;
+    }
+    #details {
+        background-size: 23em;
+    }
+    #registry-wrapper {
+        background-size: 23em, 23em, cover;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #welcome {
+        background-size: 18em, 18em, auto, cover;
+    }
+    #details {
+        background-size: 18em;
+    }
+    #registry-wrapper {
+        background-size: 18em, 18em, cover;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #welcome {
+        background-size: 15em, 15em, auto, cover;
+    }
+    #details {
+        background-size: 15em;
+    }
+    #registry-wrapper {
+        background-size: 15em, 15em, cover;
+    }
+}
+
+
+@media only screen and (max-width: 715px) {
+    .title {
+        font-size: 6rem;
+    }
+    .subtitle {
+        font-size: 3rem;
+    }
+    #banner-button {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #logo {
         display: none;
     }
-    nav {
+    header {
+        text-align: center;
+    }
+    nav {    
+        float: none;
         margin: 0;
-        width: 100vw;
     }
     .menu {
+        float: none;
         margin: 0 auto;
     }
 }
