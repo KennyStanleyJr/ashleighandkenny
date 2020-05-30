@@ -95,7 +95,7 @@ nav, .menu {
     margin: 1rem;
 }
 .title {
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Alex Brush', serif;
     font-size: 7rem;
 }
 .subtitle {
@@ -137,7 +137,7 @@ nav, .menu {
 }
 .details-cell h2 {
     margin-bottom: 1rem;
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Alex Brush', serif;
     font-size: 8rem;
 }
 .details-cell h4 {
