@@ -278,6 +278,7 @@ nav, .menu {
 @media only screen and (max-width: 480px) {
     #welcome {
         background-size: 18em, 18em, auto, cover;
+        padding: 10vh 5vh;
     }
     #details {
         background-size: 18em;
@@ -295,6 +296,11 @@ nav, .menu {
     }
     #registry-wrapper {
         background-size: 15em, 15em, cover;
+    }
+}
+@media only screen and (max-width: 361px) {
+    #welcome {
+        padding: 18vh 5vh;
     }
 }
 
