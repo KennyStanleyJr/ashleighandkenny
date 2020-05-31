@@ -18,6 +18,7 @@ html, body, .page-wrapper {
     font-family: 'Josefin Sans';
     font-size: 10px; /* For making rem calculations easier */
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
 }
 
