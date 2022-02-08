@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
-html, body, .page-wrapper {
+html,
+body,
+.page-wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -45,7 +47,8 @@ header {
     vertical-align: top;
 }
 
-nav, .menu {
+nav,
+.menu {
     float: right;
     height: 100%;
     margin-right: 1em;
@@ -66,9 +69,11 @@ nav, .menu {
     color: black;
 }
 
-
 #welcome {
-    background: url("./images/lines/light-bl.svg"), url("./images/lines/light-br.svg"), linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/wed.jpg");
+    background: url('./images/lines/light-bl.svg'),
+        url('./images/lines/light-br.svg'),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('./images/wed.jpg');
     background-position: bottom left, bottom right, top left, top center;
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
     background-size: 45em, 45em, auto, cover;
@@ -76,10 +81,10 @@ nav, .menu {
     height: 100vh;
     width: 100vw;
 }
-.title-wrapper{
+.title-wrapper {
     display: table;
     background-color: rgba(0, 0, 0, 0.5);
-    border: .5rem solid white;
+    border: 0.5rem solid white;
     border-radius: 10rem;
     color: white;
     height: 50vh;
@@ -115,7 +120,9 @@ nav, .menu {
 
 #details {
     width: 100vw;
-    background-image: url("./images/lines/dark-tl.svg"), url("./images/lines/dark-tr.svg"), url("./images/lines/dark-bl.svg"), url("./images/lines/dark-br.svg");
+    background-image: url('./images/lines/dark-tl.svg'),
+        url('./images/lines/dark-tr.svg'), url('./images/lines/dark-bl.svg'),
+        url('./images/lines/dark-br.svg');
     background-position: top left, top right, bottom left, bottom right;
     background-repeat: no-repeat;
     background-size: 45em;
@@ -150,8 +157,12 @@ nav, .menu {
     font-size: 8vh;
 }
 .details-cell h4 {
+    font-weight: 400;
     margin-bottom: 2rem;
     text-transform: uppercase;
+}
+.details-cell p {
+    font-weight: 200;
 }
 #first-info {
     padding: 10rem 0;
@@ -159,8 +170,14 @@ nav, .menu {
 #second-info {
     padding: 10vmin 0;
 }
+#third-info {
+    padding: 10vmin 0;
+}
 .flex-container#second {
     margin: 0 0 10rem 0;
+}
+.flex-container-last > div {
+    /* margin: 0 auto; */
 }
 
 .animation {
@@ -170,12 +187,12 @@ nav, .menu {
     /* box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5); */
 }
 #first-animation {
-    background-image: url("./images/smiles.gif");
+    background-image: url('./images/smiles.gif');
     background-position: center;
     background-size: cover;
 }
 #second-animation {
-    background-image: url("./images/brick-walkway.gif");
+    background-image: url('./images/brick-walkway.gif');
     background-position: 56% 20%;
     background-size: 150%;
 }
@@ -185,10 +202,11 @@ nav, .menu {
     margin: 3rem;
 }
 
-
 #registry-wrapper {
     background: gray;
-    background-image: url("./images/lines/light-tl.svg"), url("./images/lines/light-tr.svg"), linear-gradient(45deg, rgb(75,37,80), transparent);;
+    background-image: url('./images/lines/light-tl.svg'),
+        url('./images/lines/light-tr.svg'),
+        linear-gradient(45deg, rgb(75, 37, 80), transparent);
     background-position: top left, top right, bottom center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 45em, 45em, cover;
@@ -233,17 +251,17 @@ nav, .menu {
     height: 100%;
 }
 #first-registry {
-    background-image: url("./images/registry-pictures/williams-sonoma.png");
+    background-image: url('./images/registry-pictures/williams-sonoma.png');
     background-size: 120%;
     background-position: center;
 }
 #second-registry {
-    background-image: url("./images/registry-pictures/bed-bath-and-beyond.png");
+    background-image: url('./images/registry-pictures/bed-bath-and-beyond.png');
     background-size: 150%;
     background-position: center;
 }
 #third-registry {
-    background-image: url("./images/registry-pictures/anthropology-logo.png");
+    background-image: url('./images/registry-pictures/anthropology-logo.png');
     background-size: 90%;
     background-position: 50% 100%;
 }
@@ -251,7 +269,6 @@ nav, .menu {
     transform: scale(1.2);
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 1000px) {
     #welcome {
@@ -306,7 +323,6 @@ nav, .menu {
     }
 }
 
-
 @media only screen and (max-width: 715px) {
     .title {
         font-size: 6rem;
@@ -326,7 +342,7 @@ nav, .menu {
     header {
         text-align: center;
     }
-    nav {    
+    nav {
         float: none;
         margin: 0;
     }

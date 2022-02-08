@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashleigh and Kenny Wedding Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-</head>
-<body>
-    <div class="page-wrapper">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ashleigh and Kenny Wedding Website</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" href="./images/favicon.png" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- HEADER -->
+            <header>
+                <a href="./index.html"
+                    ><img
+                        id="logo"
+                        src="./images/wedding-couple.svg"
+                        alt="Wedding Couple Icon"
+                /></a>
+                <nav>
+                    <ul class="menu">
+                        <a class="smooth-scroll" href="#welcome"
+                            ><li class="menu-item button">Welcome</li></a
+                        >
+                        <a class="smooth-scroll" href="#details"
+                            ><li class="menu-item button">Details</li></a
+                        >
+                        <a class="smooth-scroll" href="#registry"
+                            ><li class="menu-item button">Registry</li></a
+                        >
+                    </ul>
+                </nav>
+            </header>
 
-        <!-- HEADER -->
-        <header>
-            <a href="./index.html"><img id="logo" src="./images/wedding-couple.svg" alt="Wedding Couple Icon"></a>
-            <nav>
-                <ul class="menu">
-                    <a class="smooth-scroll" href="#welcome"><li class="menu-item button">Welcome</li></a>
-                    <a class="smooth-scroll" href="#details"><li class="menu-item button">Details</li></a>
-                    <a class="smooth-scroll" href="#registry"><li class="menu-item button">Registry</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- BANNER -->
-        <div id="welcome">
-            <div class="title-wrapper">
-                <div class="cell">
-                    <h1 class="title">Ashleigh and Kenny</h1>
-                    <h3 class="subtitle">We're getting<br><strong>married!</strong></h3>
-                    <a href="#details" class="button smooth-scroll" id="banner-button">Details</a>
+            <!-- BANNER -->
+            <div id="welcome">
+                <div class="title-wrapper">
+                    <div class="cell">
+                        <h1 class="title">Ashleigh and Kenny</h1>
+                        <h3 class="subtitle">
+                            We're getting<br /><strong>married!</strong>
+                        </h3>
+                        <a
+                            href="#details"
+                            class="button smooth-scroll"
+                            id="banner-button"
+                            >Details</a
+                        >
+                    </div>
                 </div>
             </div>
+
+            <!-- DETAILS -->
+            <section id="details">
+                <div id="details-wrapper">
+                    <div id="info">
+                        <article id="first" class="flex-container">
+                            <div
+                                class="animation details-cell"
+                                id="first-animation"
+                            ></div>
+                            <div id="first-info" class="details-cell">
+                                <h2>When</h2>
+                                <h4>March 19th, 2022</h4>
+                            </div>
+                        </article>
+                        <article id="second" class="flex-container">
+                            <div id="second-info" class="details-cell">
+                                <h2>Where</h2>
+                                <h4>Cainland Farm</h4>
+                                <p>
+                                    3930 Jimmy Gray Robinson Rd.<br />
+                                    Williamsport, TN 38487
+                                </p>
+                            </div>
+                            <div
+                                class="animation details-cell"
+                                id="second-animation"
+                            ></div>
+                        </article>
+                        <article id="third" class="flex-container-last">
+                            <div id="third-info" class="details-cell">
+                                <h2>Accommodations</h2>
+                                <h4>Comfort Suites</h4>
+                                <p>
+                                    1551 Bear Creek Pike<br />
+                                    Columbia, TN 38401
+                                </p>
+                                <br />
+                                <p><i>CAIN STANLEY WEDDING</i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- <img id="save-the-date" src="./images/save-the-date.jpg" alt="Ashleigh and Kenny save-the-date">           -->
+                </div>
+            </section>
+
+            <!-- REGISTRY -->
+            <section id="registry-wrapper">
+                <article id="registry">
+                    <h2>
+                        We have <strong>Registries</strong> in the following
+                        places...
+                    </h2>
+                    <ul id="registry-list">
+                        <a
+                            href="https://www.williams-sonoma.com/registry/bxzj5nxw2r/registry-list.html"
+                            target="_blank"
+                            >Williams Sonoma
+                            <li id="first-registry"></li
+                        ></a>
+                        <a
+                            href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/548255256"
+                            target="_blank"
+                            >Bed Bath and Beyond
+                            <li id="second-registry"></li
+                        ></a>
+                        <a
+                            href="https://www.anthropologie.com/registry/listing?registryId=ZDDLNJHIM2Y3"
+                            target="_blank"
+                            >Anthropology
+                            <li id="third-registry"></li
+                        ></a>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- FOOTER -->
+            <footer></footer>
         </div>
-
-        <!-- DETAILS -->
-        <section id="details">
-            <div id="details-wrapper">
-                <div id="info">
-                    <article id="first" class="flex-container">
-                        <div class="animation details-cell" id="first-animation"></div>
-                        <div id="first-info" class="details-cell">
-                            <h2>When</h2>
-                            <p>March 19th, 2022</p>
-                        </div>
-                    </article>
-                    <article id="second" class="flex-container">
-                        <div id="second-info" class="details-cell">
-                            <h2>Where</h2>
-                            <h4>Cainland Farm</h4>
-                            <p>3930 Jimmy Gray Robinson Rd.<br>
-                                Williamsport, TN 38487</p>
-                        </div>
-                        <div class="animation details-cell" id="second-animation"></div>
-                    </article>
-                </div>
-                <!-- <img id="save-the-date" src="./images/save-the-date.jpg" alt="Ashleigh and Kenny save-the-date">           -->
-            </div>
-        </section>
-
-        <!-- REGISTRY -->
-        <section id="registry-wrapper">
-            <article id="registry">
-                <h2>We have <strong>Registries</strong> in the following places...</h2>
-                <ul id="registry-list">
-                    <a href="https://www.williams-sonoma.com/registry/bxzj5nxw2r/registry-list.html" target="_blank">Williams Sonoma<li id="first-registry"></li></a>
-                    <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/548255256" target="_blank">Bed Bath and Beyond<li id="second-registry"></li></a>
-                    <a href="https://www.anthropologie.com/registry/listing?registryId=ZDDLNJHIM2Y3" target="_blank">Anthropology<li id="third-registry"></li></a>
-                </ul>
-            </article>
-        </section>
-
-        <!-- FOOTER -->
-        <footer></footer>
-
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./app.js"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
 </html>
